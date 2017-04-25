@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-document-offset/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-document-offset/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-document-offset/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-document-offset/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-document-offset/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-document-offset/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-document-offset/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-document-offset/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-document-offset/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-document-offset/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-document-offset/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-document-offset/build/coverage.html/index.html)
 
@@ -35,45 +35,62 @@
 ```json
 
 {
-    "name": "document-offset",
-    "description": "Get offset of a DOM Element or Range within the document",
-    "version": "1.0.4",
-    "keywords": [
-        "browser",
-        "coordinates"
-    ],
-    "dependencies": {
-        "dom-support": "*",
-        "get-document": "1.0.0",
-        "within-element": "0.1.0"
+    "author": {
+        "name": "Tim Oxley"
     },
-    "scripts": {
-        "start": "make && echo 'Example at: http://localhost:8080/example/' && http-server"
+    "bugs": {
+        "url": "https://github.com/timoxley/offset/issues"
     },
     "component": {
         "scripts": {
             "offset/index.js": "index.js"
         }
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/timoxley/offset.git"
-    },
-    "bugs": {
-        "url": "https://github.com/timoxley/offset/issues"
-    },
-    "homepage": "https://github.com/timoxley/offset",
-    "main": "index.js",
     "contributors": "Nathan Rajlich",
-    "directories": {
-        "example": "example"
+    "dependencies": {
+        "dom-support": "*",
+        "get-document": "1.0.0",
+        "within-element": "0.1.0"
     },
-    "author": "Tim Oxley",
-    "license": "MIT",
+    "description": "Get offset of a DOM Element or Range within the document",
     "devDependencies": {
         "component": "^1.1.0",
         "http-server": "^0.8.0"
-    }
+    },
+    "directories": {
+        "example": "example"
+    },
+    "dist": {
+        "shasum": "7345b819cdfef2bb45c63ce13056416063b70085",
+        "tarball": "https://registry.npmjs.org/document-offset/-/document-offset-1.0.4.tgz"
+    },
+    "gitHead": "ca4a4359aba40ca90fd9e1bedc06c756e20edafd",
+    "homepage": "https://github.com/timoxley/offset",
+    "keywords": [
+        "browser",
+        "coordinates"
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "maintainers": [
+        {
+            "name": "timoxley"
+        },
+        {
+            "name": "tootallnate"
+        }
+    ],
+    "name": "document-offset",
+    "optionalDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/timoxley/offset.git"
+    },
+    "scripts": {
+        "start": "make && echo 'Example at: http://localhost:8080/example/' && http-server"
+    },
+    "version": "1.0.4",
+    "bin": {}
 }
 ```
 
